@@ -1,0 +1,4 @@
+#!/bin/bash
+[[ -n $JAVA_8 ]] && JAVA_HOME=$JAVA_8
+env=${1:-default}
+mvn clean compile spring-boot:run -Dspring.profiles.active=$env

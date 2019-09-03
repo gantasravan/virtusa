@@ -19,9 +19,11 @@ public class NumberToWordValidation {
     @Autowired
     private ValidationRules validationRules;
 
-
+    /**
+     * This will take the input from keyboard and check for Int or Float or others
+     */
     public void numberToWordValidation() {
-        System.out.print("Enter the number: ");
+        System.out.print("Enter the number to convert: ");
         boolean done = false;
         try {
             while (!done) {

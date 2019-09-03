@@ -19,19 +19,10 @@ import java.util.Scanner;
 @SpringBootApplication
 public class VirtusaTestApplication {
 
-//    @Autowired
-//    NumberToWordValidation numberToWordValidation;
-
     public static void main(String[] args) {
-//        SpringApplication.run(VirtusaTestApplication.class, args);
-//        VirtusaTestApplication application = new VirtusaTestApplication();
-//        application.numberToWordValidation
-//        NumberToWordValidation service = applicationContext.getBean(SomeService.class);
         ConfigurableApplicationContext context = SpringApplication.run(VirtusaTestApplication.class, args);
         NumberToWordValidation numberToWordValidation = context.getBean(NumberToWordValidation.class);
         numberToWordValidation.numberToWordValidation();
-
-
     }
 
 
